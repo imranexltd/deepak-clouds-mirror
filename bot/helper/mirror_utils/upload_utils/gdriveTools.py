@@ -560,7 +560,7 @@ class GoogleDriveHelper:
                                                orderBy='name asc').execute()
         content_count = 0
         if response["files"]:
-            msg += f'<img src="{IMAGE_URL}" /><h4>{len(response["files"])} Results: {fileName}</h4><br><br>'
+            msg += f'<h4>{len(response["files"])} Results: {fileName}</h4><br><br>'
             for file in response.get('files', []):
                 if file.get('mimeType') == "application/vnd.google-apps.folder":  # Detect Whether Current Entity is a Folder or File.
                     furl = f"https://drive.google.com/drive/folders/{file.get('id')}"
@@ -619,9 +619,9 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = 'Deepak Clouds Torrent Search',
-                                                        author_name='Deepak Clouds Torrent',
-                                                        author_url='https://telegram.dog/cloudsmirror',
+                                                        title = '',
+                                                        author_name='',
+                                                        author_url='',
                                                         html_content=content
                                                         )['path'])
 
