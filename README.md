@@ -1,4 +1,4 @@
-[![Slam]()](https://telegram.dog/cloudsmirror)
+
 
 # Deepak Clouds Mirror
 ![GitHub Repo stars](https://img.shields.io/github/stars/blackdeep04/deepak-clouds-mirror?color=blue&style=flat)
